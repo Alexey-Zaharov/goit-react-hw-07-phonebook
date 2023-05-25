@@ -16,10 +16,10 @@ const App = () => {
 
   return (
     <>
+      {isLoading && !error && <b>Request in progress...</b>}
       <h1>PhoneBook</h1>
       <ContactForm />
       <h1>Contacts</h1>
-      {isLoading && !error && <b>Request in progress...</b>}
       <Filter />
       <ContactList />
     </>
